@@ -11,7 +11,7 @@ app.use(bodyp.urlencoded({ extended: false }));
 app.use(bodyp.json());
 
 // MONGODB SETUP
-const DBurl = "mongodb+srv://admin-saras:test123@cluster0.a5fbb.mongodb.net/sparksBank?retryWrites=true&w=majority";
+const DBurl = "mongodb+srv://saras@cluster0.a5fbb.mongodb.net/sparksBank?retryWrites=true&w=majority";
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 mongoose.connect(DBurl,{ useNewUrlParser: true , useUnifiedTopology: true } )
@@ -41,10 +41,7 @@ app.get("/transfermoney",(req,res)=>{
     res.render("transfer_money")
 })
 
-// ABOUT ROUTE
-// app.get("/about",(req,res)=>{
-//     res.render("about")
-// })
+
 
 // ALL TRANSFER MONEY
 app.get("/alltransfermoney",(req,res)=>{
