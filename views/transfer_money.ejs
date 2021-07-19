@@ -1,0 +1,16 @@
+<%- include("header") -%>
+        <!-- BODY CONTENT -->
+        <div class="table-body ">
+            <div class="content ">
+                <img src="Image\bank-transfer.png" class="bankimg" alt="" height="150px" width="150px">
+                <form action="/p" method="POST">
+
+                    <input type="String" placeholder="Receiver's Name" name="name"> <br>
+                    <input type="number" placeholder="Account Number" class="" name="acnumber"> <br>
+                    <input type="number" placeholder="Enter Money" name="money"> <br>
+                    <button type="submit" class="btn btn-primary btn-lg">Transfer</button>
+                </form>
+            </div>
+        </div>
+
+      <%- include("footer") -%>

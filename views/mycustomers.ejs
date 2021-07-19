@@ -1,0 +1,29 @@
+<%- include("header") -%>
+
+
+        <div class="table-body">
+            <div class="body-content opac">
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <td scope="col">Name</td>
+                            <td>Email</td>
+                            <td>Account Number</td>
+                            <td>Balance</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% results.forEach(results=>{ %>
+                        <tr>
+                            <td><%= results.name %></td>
+                            <td><%= results.email %></td>
+                            <td><%= results.accountnumber %></td>
+                            <td>₹<%= results.bankBalance %></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <%- include("footer") -%>

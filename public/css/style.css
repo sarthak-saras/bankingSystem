@@ -1,0 +1,88 @@
+/* background image */
+html, body {
+  width: 100%;
+  height:100%;
+}
+body{
+    /* background-image: url("../Image/ezgif.com-gif-maker.jpg");    */
+    background: linear-gradient(-45deg, #FA715F, #25AA31, #EFA9EF, #9B4CA7);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*Body css*/
+
+h1{
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.opac{
+  opacity:0.65
+}
+.content{
+  padding:70px;
+}
+.table-body{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+
+}
+.btns{
+    margin-left: 150px;
+    background: black;
+}
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+
+/* table css */
+table{
+    margin-left: 20px;
+}
+input{
+    padding: 10px 40px;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    margin-left: 80px;
+}
+.bankimg{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+/*footer Css*/
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+}
+.footer-text{
+    margin-top: 15px;
+}
